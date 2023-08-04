@@ -1,10 +1,5 @@
 # dotcards-assessment
 
-## Overview
-
-This project should take approximately 3 hours to complete and help dot.Cards assess your back end knowledge and development style.
-If you find the project takes longer than you’d like please submit a functional version of what you have. We're interested in assessing a functioning project even if all of the business requirements are not implemented.
-
 ## The Problem
 
 You’ve been asked to build a generic database proxy - that is, a REST API for CRUD on a SQL database - in Node.JS. Translate REST language into valid SQL statements using your API endpoint handlers, written in Typescript/Node. Use any server framework (Express, Koa) and SQL flavor (MySQL, Postgres) you like.
