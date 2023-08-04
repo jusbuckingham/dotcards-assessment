@@ -13,9 +13,9 @@ You don’t know what the schema looks like, so your DB proxy should implement a
 ## Technical Requirements
 - Create, Read, Update and Delete SQL statements should map to 
   - POST /:collection
-- - GET /:collection/:id
-- - POST /:collection/:id 
-- - DELETE /:collection/:id
+  - GET /:collection/:id
+  - POST /:collection/:id 
+  - DELETE /:collection/:id
 
 - DB Proxy should check for the existence of the tables specified by your example schema and create/add columns if not detected.
 - Your DB can be a local SQLite instance or you may include a Dockerfile to define it.
