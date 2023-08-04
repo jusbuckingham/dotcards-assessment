@@ -4,7 +4,7 @@ import { open, Database } from 'sqlite';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const DATABASE_FILE = 'database.db'; // Change this to the desired database file name
+const DATABASE_FILE = 'database.db'; 
 
 // In-memory "database"
 let data: Record<string, any>[] = [];
@@ -16,7 +16,7 @@ function findItemById(collection: string, id: string): Record<string, any> | und
 
 // Function to initialize the database schema
 async function buildSchema() {
-  const db = await open({
+  const db: Database = await open({
     filename: DATABASE_FILE,
     driver: sqlite3.Database,
   });
@@ -39,7 +39,7 @@ app.use(async (req, res, next) => {
   try {
     await buildSchema(); // Initialize the database schema based on JSON schema files
     next();
-  } catch (err: any) {
+  } catch (err: any) { // Use the "any" type for "err"
     console.error('Error initializing database schema:', err.message);
     res.status(500).json({ error: 'Internal Server Error' });
   }
@@ -100,7 +100,7 @@ process.on('unhandledRejection', (err) => {
 });
 
 // Error handling middleware
-app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
+app.use((err: any, req: Request, res: Response, next: NextFunction) => {
   console.error('Error:', err.stack);
   res.status(500).json({ error: 'Internal Server Error' });
 });
