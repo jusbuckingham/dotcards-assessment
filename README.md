@@ -12,7 +12,7 @@ You don’t know what the schema looks like, so your DB proxy should implement a
 
 ## Technical Requirements
 - Create, Read, Update and Delete SQL statements should map to 
-- - POST /:collection
+  - POST /:collection
 - - GET /:collection/:id
 - - POST /:collection/:id 
 - - DELETE /:collection/:id
