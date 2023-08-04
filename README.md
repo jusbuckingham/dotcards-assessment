@@ -22,8 +22,5 @@ You don’t know what the schema looks like, so your DB proxy should implement a
 - This project should use Typescript and Node.JS.
 - This project should include a README that addresses anything you may not have completed. It should also address what additional changes you might need to make if the application were intended to run in a concurrent environment. Any other comments or thoughts about the project are also welcome.
 
-## Submission Requirements
-A link to a hosted git repository or tarball of the git repository of the finished project. Please email the repository link or tarball to jeffrey@dot.cards.
-
 ## Bonus Points
 Automated tests that ensure the business logic implemented is correct.
