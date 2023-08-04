@@ -1,0 +1,4 @@
+{
+  "users": "id INTEGER PRIMARY KEY, name TEXT, age INTEGER",
+  "products": "id INTEGER PRIMARY KEY, name TEXT, price REAL"
+}
