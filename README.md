@@ -20,4 +20,11 @@ You don’t know what the schema looks like, so your DB proxy should implement a
 ## Bonus Points
 Automated tests that ensure the business logic implemented is correct.
 
-## 
+## What I did not complete?
+Nothing
+
+## Changes you might need to make if the application were intended to run in a concurrent environment
+
+- Use a more scalable database solution.
+- A front end
+
