@@ -2,7 +2,7 @@ import sqlite3 from 'sqlite3';
 import fs from 'fs';
 
 const dbFile = './database.db';
-const schemaFile = './src/schema.json';
+const schemaFile = './src/schema/schema.json';
 
 export async function buildSchema() {
   const db = new sqlite3.Database(dbFile);
